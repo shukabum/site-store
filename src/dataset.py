@@ -10,7 +10,7 @@ CORS(app)  # Enable CORS for all routes
 
 
 # Assuming 'data' is your DataFrame
-data = pd.read_csv(r"C:\Users\SHUBHAM SHARMA\WEB DEV\dum\src\Grocery_Store_Locations.csv")
+data = pd.read_csv(r"C:\Users\user\OneDrive\Desktop\proj\site-store\src\Grocery_Store_Locations.csv")
 data['CLEAN_ADDRESS'] = data['ADDRESS'].apply(lambda x: re.sub('[^A-Za-z0-9]+', ' ', x))
 data['CLEAN_ADDRESS'] = data['CLEAN_ADDRESS'].str.replace('\d+', '', regex=True)
 
